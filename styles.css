@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212,45%,89%);
+    --grayish-blue: hsl(220,15%,55%);
+    --dark-blue: hsl(218,44%,22%);
+}
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  vertical-align: baseline;
+}
+
+ /* HTML5 display-role reset for older browsers */
+article , aside , details , figcaption , figure , 
+footer , header , hgroup , menu , nav , section {
+    display: block;   }
+
+ body { line-height: 1; }
+
+ ol , ul { list-style: none; }
+
+ blockquote , q { quotes: none; }
+
+ blockquote :before , blockquote :after { content:""; content :none ; }
+
+ q :before , q :after { content:""; content :none ; }
+
+ table { border-collapse: collapse; border-spacing: 0;}
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: var(--light-gray);
+    text-align: center;
+    font-weight: 400;
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+section {
+    margin: 0 auto;
+    background-color: var(--white);
+    max-width: 300px;
+    border-radius: 1em;
+}
+
+/* maintain section width  */
+section div {
+    padding: 15px;
+}
+
+section article {
+    margin-top: -20px;
+    padding: 25px;
+    line-height: 1.2;
+}
+
+section article h1 {
+    font-weight: 700;
+    font-size: 20px;
+    font-style: bold;
+}
+
+section article p {
+    color: var(--grayish-blue);
+    margin-top: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
